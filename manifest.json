@@ -1,0 +1,18 @@
+{
+  "name":"Routes MC",
+  "version":"0.01",
+  "description":"exibe rotas da api",
+  "browser_action":{
+    "default_popup":"index.html"
+  },
+  "permissions": [
+    "tabs"
+ ],
+  "content_scripts": {
+    "matches": ["https://muysalud.com/",
+      "https://lamenteesmaravillosa.com/"
+    ],
+    "js": ["script.js"]
+  },
+  "manifest_version":2
+}
